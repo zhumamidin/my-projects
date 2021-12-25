@@ -1,0 +1,14 @@
+@import "../vars";
+
+.header {
+  background: $secondary-color;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__nav {
+    order: -1;
+  }
+}
