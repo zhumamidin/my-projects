@@ -4,11 +4,43 @@
   background: $secondary-color;
 
   &__inner {
+    padding-top: 47px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   &__nav {
     order: -1;
+  }
+
+  &__menu-item {
+    &:hover .header__submenu {
+      display: block;
+    }
+  }
+
+  &__submenu {
+    display: none;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    list-style: none;
+    background: $accent-color;
+    z-index: 2;
+  }
+
+  &__submenu-item {
+    padding: 0.4em 0.2em;
+  }
+
+  &__submenu-link {
+    display: block;
+    text-decoration: none;
+    color: $accent-dark;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 0 0.3em;
   }
 }
