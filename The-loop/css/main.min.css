@@ -59,12 +59,14 @@ body {
   padding: 0;
   margin: 0;
   list-style: none;
+  padding: 0 5px;
   background-color: #d7b399;
   z-index: 2;
 }
 
 .header__submenu-item {
   padding: 0.4em 0.2em;
+  border-bottom: 1px dashed #000000;
 }
 
 .header__submenu-link {
@@ -171,4 +173,109 @@ body {
   border-top: 8px solid #212121;
   margin-left: 5px;
   display: inline-block;
+}
+
+.slider {
+  background: #f9f6f1;
+  /* Slider IMG ////////////////// */
+}
+
+.slider__item {
+  padding-top: 100px;
+}
+
+.slider__item-inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 40px;
+}
+
+.slider__sale {
+  font-size: 30px;
+  line-height: 37px;
+  letter-spacing: 2%;
+  font-weight: 400;
+  color: #000000;
+}
+
+.slider__discount {
+  font-size: 55px;
+  line-height: 67px;
+  letter-spacing: 4%;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.slider__item-img {
+  position: relative;
+}
+
+.slider__item-img img {
+  width: 100%;
+}
+
+.slider__img-price {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-align: right;
+}
+
+.slider__old-price {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 700;
+  color: #000000;
+  text-decoration: line-through;
+}
+
+.slider__new-price {
+  font-size: 42px;
+  line-height: 51px;
+  font-weight: 700;
+  color: #d84033;
+}
+
+.slick-dots {
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.slick-dots button {
+  font-size: 0;
+  border: none;
+  background: #cecece;
+  width: 40px;
+  height: 7px;
+  margin: 100px 15px 70px 15px;
+}
+
+.slick-dots .slick-active button {
+  background: #d7b399;
+}
+
+.btn {
+  padding: 17px 30px 18px 29px;
+  background: #d7b399;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #ffffff;
 }

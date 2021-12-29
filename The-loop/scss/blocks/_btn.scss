@@ -1,0 +1,13 @@
+@import "../vars";
+
+.btn {
+  padding: 17px 30px 18px 29px;
+  background: $accent-color;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: $main-font;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $light;
+}

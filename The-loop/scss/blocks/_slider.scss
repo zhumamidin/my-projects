@@ -1,0 +1,83 @@
+@import "../vars";
+
+.slider {
+  background: $secondary-color;
+
+  &__item {
+    padding-top: 100px;
+  }
+
+  &__item-inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+  }
+
+  &__sale {
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: 2%;
+    font-weight: 400;
+    color: $dark;
+  }
+
+  &__discount {
+    font-size: 55px;
+    line-height: 67px;
+    letter-spacing: 4%;
+    font-weight: 700;
+    color: $dark;
+    text-transform: uppercase;
+  }
+
+  /* Slider IMG ////////////////// */
+
+  &__item-img {
+    position: relative;
+  }
+
+  &__item-img img {
+    width: 100%;
+  }
+
+  &__img-price {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-align: right;
+  }
+
+  &__old-price {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 700;
+    color: $dark;
+    text-decoration: line-through;
+  }
+
+  &__new-price {
+    font-size: 42px;
+    line-height: 51px;
+    font-weight: 700;
+    color: #d84033;
+  }
+}
+
+.slick-dots {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.slick-dots button {
+  font-size: 0;
+  border: none;
+  background: #cecece;
+  width: 40px;
+  height: 7px;
+  margin: 100px 15px 70px 15px;
+}
+
+.slick-dots .slick-active button {
+  background: $accent-color;
+}
