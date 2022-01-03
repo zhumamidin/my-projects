@@ -279,3 +279,33 @@ body {
   font-weight: 400;
   color: #ffffff;
 }
+
+.info {
+  width: 100%;
+  min-height: 235px;
+  background: #212121;
+}
+
+.info__inner {
+  text-align: center;
+  padding: 80px 150px 70px 150px;
+}
+
+.info__title {
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+.info__title span {
+  font-weight: 400;
+}
+
+.info__text {
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: 300px;
+  line-height: 26px;
+}
