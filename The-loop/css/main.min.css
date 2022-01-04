@@ -309,3 +309,90 @@ body {
   font-weight: 300px;
   line-height: 26px;
 }
+
+.catalog__top {
+  min-height: 250px;
+  background: #f9f6f1;
+}
+
+.catalog__inner {
+  padding: 60px 0 0 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.catalog__item {
+  min-height: 250px;
+}
+
+.catalog__item--mens {
+  background: url(../../images/bg-product.png);
+  background-repeat: no-repeat;
+  background-position: bottom right 15px;
+}
+
+.catalog__item--womens {
+  background: url(../../images/bg-product-womens.png);
+  background-repeat: no-repeat;
+  background-position: bottom right 15px;
+}
+
+.catalog__item-title {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.catalog__item-title span {
+  font-weight: 300;
+}
+
+.catalog__text {
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+.catalog__btn {
+  padding: 7px 30px;
+}
+
+.catalog__inner-bottom {
+  background: #f9f6f1;
+  margin-bottom: 150px;
+}
+
+.catalog__bottom-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.catalog__bottom-item {
+  position: relative;
+}
+
+.catalog__bottom-title {
+  position: absolute;
+  bottom: 25px;
+  left: 30px;
+}
+
+.catalog__bottom-link {
+  text-decoration: none;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: 300;
+}
