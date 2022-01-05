@@ -1,1 +1,32 @@
 @import "../vars";
+
+.subscribe {
+  min-height: 180px;
+  background: $accent-dark;
+
+  &__inner {
+    padding: 71px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__title {
+    color: $light;
+    font-size: 30px;
+    line-height: 37px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__input {
+    width: 255px;
+    height: 40px;
+    padding: 13px 20px;
+    color: #8d8d8d;
+  }
+
+  &__btn {
+    padding: 10px 35px;
+  }
+}
