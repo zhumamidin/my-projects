@@ -14,11 +14,11 @@
     order: -1;
   }
 
-  &__menu-item {
-    &:hover .header__submenu {
-      display: block;
-    }
-  }
+  // &__menu-item {
+  //   &:hover .header__submenu {
+  //     display: block;
+  //   }
+  // }
 
   &__submenu {
     display: none;
@@ -56,6 +56,10 @@
     text-decoration: none;
     color: $accent-dark;
   }
+}
+
+.js-submenu-show {
+  display: block;
 }
 
 .sr-only {
