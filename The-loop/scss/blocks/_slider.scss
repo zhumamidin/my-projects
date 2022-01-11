@@ -13,10 +13,15 @@
     padding: 0 40px;
   }
 
+  &__item-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   &__sale {
     font-size: 30px;
     line-height: 37px;
-    letter-spacing: 2%;
     font-weight: 400;
     color: $dark;
   }
@@ -83,3 +88,39 @@
 .slick-dots .slick-active button {
   background: $accent-color;
 }
+
+@media (max-width: 870px) {
+  .slider {
+    &__discount {
+      font-size: 2em;
+      line-height: 1.5em;
+      font-weight: 700;
+      color: $dark;
+      text-transform: uppercase;
+      margin: 1em 0;
+    }
+  }
+}
+
+@media (max-width: 660px) {
+  .slider {
+    &__item-inner {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .slider {
+    &__old-price {
+      font-size: 12px;
+      line-height: 15px;
+    }
+
+    &__new-price {
+      font-size: 21px;
+      line-height: 25px;
+    }
+  }
+} ;

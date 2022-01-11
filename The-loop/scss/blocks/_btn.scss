@@ -11,3 +11,10 @@
   font-weight: 400;
   color: $light;
 }
+
+@media (max-width: 749px) {
+  .btn {
+    padding: 12px 21px;
+    font-size: 12px;
+  }
+}

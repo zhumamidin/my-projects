@@ -14,6 +14,15 @@
     order: -1;
   }
 
+  &__logo img {
+    max-width: 100%;
+  }
+
+  &__menu-burger {
+    order: -2;
+    display: none;
+  }
+
   // &__menu-item {
   //   &:hover .header__submenu {
   //     display: block;
@@ -58,6 +67,39 @@
   }
 }
 
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+
+  &__item + &__item {
+    margin-left: 35px;
+  }
+
+  &__link {
+    position: relative;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 500;
+    color: $accent-dark;
+    text-decoration: none;
+  }
+
+  &__link::after {
+    position: absolute;
+    content: "";
+    top: 6px;
+    width: 0;
+    height: 0;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    border-top: 8px solid $accent-dark;
+    margin-left: 5px;
+    display: inline-block;
+  }
+}
+
 .js-submenu-show {
   display: block;
 }
@@ -95,12 +137,78 @@
   &__informer::before {
     position: absolute;
     top: 7px;
-    left: 45px;
+    left: 46px;
     content: "";
     width: 0;
     height: 0;
     border-top: 8px solid transparent;
     border-bottom: 8px solid transparent;
     border-right: 15px solid $accent-color;
+  }
+}
+
+@media (max-width: 870px) {
+  .header {
+    &__inner {
+      flex-wrap: wrap;
+    }
+    &__nav {
+      order: 3;
+      width: 100%;
+      background: $accent-color;
+      display: none;
+    }
+
+    &__menu-burger {
+      display: block;
+    }
+
+    &__links {
+      display: none;
+      order: 3;
+      width: 100%;
+      background: $accent-color;
+    }
+
+    &__link + &__link {
+      margin-left: 0;
+    }
+
+    &__link {
+      padding: 1em 0;
+      border-bottom: 1px dotted $dark;
+    }
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+
+    &__item + &__item {
+      margin-left: 0;
+    }
+
+    &__item {
+      padding: 1em 0;
+      border-bottom: 1px dotted $dark;
+    }
+  }
+
+  .js-menu-show {
+    display: block;
+  }
+
+  .js-link-show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 354px) {
+  .header {
+    &__inner {
+      justify-content: center;
+    }
   }
 }
