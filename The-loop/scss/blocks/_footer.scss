@@ -71,3 +71,22 @@
     color: $accent-dark;
   }
 }
+
+@media (max-width: 640px) {
+  .footer {
+    &__inner {
+      grid-template-columns: 1fr;
+    }
+    &__logo {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .footer {
+    &__list {
+      flex-wrap: wrap;
+    }
+  }
+}

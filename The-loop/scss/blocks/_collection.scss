@@ -19,10 +19,12 @@
     margin: 100px 0;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
     grid-gap: 30px;
   }
 
   &__model {
+    max-width: 100%;
     position: relative;
     padding: 25px;
     max-width: 255px;
@@ -55,6 +57,7 @@
   }
 
   &__model-img {
+    max-width: 100%;
     padding-bottom: 25px;
   }
 
@@ -90,5 +93,29 @@
     right: 35px;
     background: url(../../images/Arrow.svg);
     background-position: center;
+  }
+}
+
+@media (max-width: 1124px) {
+  .collection {
+    &__models {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .collection {
+    &__models {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .collection {
+    &__models {
+      grid-template-columns: 1fr;
+    }
   }
 }

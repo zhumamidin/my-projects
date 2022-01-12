@@ -29,3 +29,23 @@
     line-height: 26px;
   }
 }
+
+@media (max-width: 776px) {
+  .info {
+    &__inner {
+      padding: 30px 60px;
+    }
+  }
+}
+
+@media (max-width: 372px) {
+  .info {
+    &__title {
+      font-size: 18px;
+    }
+
+    &__text {
+      font-size: 15px;
+    }
+  }
+} ;
